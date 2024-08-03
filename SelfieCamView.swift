@@ -21,14 +21,16 @@ struct SelfieCamView: View {
                 Button(action: {
                     viewModel.capturePhoto()
                 }) {
-                    Text("Capture")
-                        .font(.largeTitle)
-                        .padding()
-                        .background(Color.white)
-                        .foregroundColor(.black)
-                        .cornerRadius(10)
-                        .padding(.bottom, 30)
+                    Circle()
+                        .fill(Color.white)
+                        .frame(width: 70, height: 70)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.gray, lineWidth: 2)
+                                .frame(width: 60, height: 60)
+                        )
                 }
+                .padding(.bottom, 30)
             }
         }
     }
