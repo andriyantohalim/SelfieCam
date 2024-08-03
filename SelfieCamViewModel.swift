@@ -42,7 +42,9 @@ class SelfieCamViewModel: NSObject, ObservableObject, AVCapturePhotoCaptureDeleg
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
         previewLayer?.videoGravity = .resizeAspectFill
 
-        captureSession?.startRunning()
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            self?.captureSession?.startRunning()
+        }
     }
 
     func capturePhoto() {
