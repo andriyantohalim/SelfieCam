@@ -14,6 +14,8 @@
 		EF313E582C5E366300AC85AD /* SelfieCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF313E572C5E366300AC85AD /* SelfieCamTests.swift */; };
 		EF313E622C5E366300AC85AD /* SelfieCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF313E612C5E366300AC85AD /* SelfieCamUITests.swift */; };
 		EF313E642C5E366300AC85AD /* SelfieCamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF313E632C5E366300AC85AD /* SelfieCamUITestsLaunchTests.swift */; };
+		EF313E712C5E36AF00AC85AD /* SelfieCamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF313E702C5E36AF00AC85AD /* SelfieCamViewModel.swift */; };
+		EF313E732C5E36B300AC85AD /* SelfieCamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF313E722C5E36B300AC85AD /* SelfieCamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		EF313E5D2C5E366300AC85AD /* SelfieCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF313E612C5E366300AC85AD /* SelfieCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCamUITests.swift; sourceTree = "<group>"; };
 		EF313E632C5E366300AC85AD /* SelfieCamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF313E702C5E36AF00AC85AD /* SelfieCamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCamViewModel.swift; sourceTree = "<group>"; };
+		EF313E722C5E36B300AC85AD /* SelfieCamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		EF313E3A2C5E366200AC85AD = {
 			isa = PBXGroup;
 			children = (
+				EF313E702C5E36AF00AC85AD /* SelfieCamViewModel.swift */,
+				EF313E722C5E36B300AC85AD /* SelfieCamView.swift */,
 				EF313E452C5E366200AC85AD /* SelfieCam */,
 				EF313E562C5E366300AC85AD /* SelfieCamTests */,
 				EF313E602C5E366300AC85AD /* SelfieCamUITests */,
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF313E712C5E36AF00AC85AD /* SelfieCamViewModel.swift in Sources */,
 				EF313E492C5E366200AC85AD /* ContentView.swift in Sources */,
+				EF313E732C5E36B300AC85AD /* SelfieCamView.swift in Sources */,
 				EF313E472C5E366200AC85AD /* SelfieCamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +433,9 @@
 				DEVELOPMENT_TEAM = 9D79AWT4TU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to save photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +465,9 @@
 				DEVELOPMENT_TEAM = 9D79AWT4TU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to your photo library to save photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to save photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

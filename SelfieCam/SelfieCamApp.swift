@@ -11,7 +11,7 @@ import SwiftUI
 struct SelfieCamApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SelfieCamView()
         }
     }
 }
