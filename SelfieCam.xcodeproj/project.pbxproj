@@ -78,8 +78,6 @@
 		EF313E3A2C5E366200AC85AD = {
 			isa = PBXGroup;
 			children = (
-				EF313E702C5E36AF00AC85AD /* SelfieCamViewModel.swift */,
-				EF313E722C5E36B300AC85AD /* SelfieCamView.swift */,
 				EF313E452C5E366200AC85AD /* SelfieCam */,
 				EF313E562C5E366300AC85AD /* SelfieCamTests */,
 				EF313E602C5E366300AC85AD /* SelfieCamUITests */,
@@ -100,6 +98,8 @@
 		EF313E452C5E366200AC85AD /* SelfieCam */ = {
 			isa = PBXGroup;
 			children = (
+				EF313E702C5E36AF00AC85AD /* SelfieCamViewModel.swift */,
+				EF313E722C5E36B300AC85AD /* SelfieCamView.swift */,
 				EF313E462C5E366200AC85AD /* SelfieCamApp.swift */,
 				EF313E482C5E366200AC85AD /* ContentView.swift */,
 				EF313E4A2C5E366300AC85AD /* Assets.xcassets */,
